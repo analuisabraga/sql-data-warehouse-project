@@ -1,0 +1,23 @@
+/*
+=============================================================
+Create Database and Schemas
+=============================================================
+Script Purpose:
+    This script sets up three schemas within the 'postgres' database: 
+    'bronze', 'silver', and 'gold'.
+    
+Note:
+    I used the Query Tool to create the schemas after connecting to the database 
+    instead of using a CREATE DATABASE statement within the script.
+
+=============================================================
+*/
+
+-- Connect to the database manually or ensure you’re using the correct one
+-- Then, create the schemas:
+CREATE SCHEMA bronze;
+CREATE SCHEMA silver;
+CREATE SCHEMA gold;
+
+-- No need for GO between command 
+-- PostgreSQL executes statements sequentially without requiring a batch separator like GO
