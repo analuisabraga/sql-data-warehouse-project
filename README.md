@@ -1,5 +1,5 @@
 # sql-data-warehouse-project
-In this project, I designed and implemented a data warehouse from two source systems (ERP and CRM) provided as .csv files. The process involved ETL/ELT workflows including data cleasining, standardization, normalization and enrichment. The final data model supports seamless data integration providing a solid foundation for business analysis and decision-making.
+In this project, I designed and implemented a data warehouse from two source systems (ERP and CRM), in Postgresql, provided as .csv files. The process involved ETL/ELT workflows including data cleasining, standardization, normalization and enrichment. The final data model supports seamless data integration providing a solid foundation for business analysis and decision-making.
 
 ⛁ Building a Data Warehouse (Data Engineering)
 
