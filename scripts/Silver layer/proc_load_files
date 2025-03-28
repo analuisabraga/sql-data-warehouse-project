@@ -1,0 +1,55 @@
+CREATE OR REPLACE FUNCTION silver.load_silver()
+RETURNS VOID AS
+$$
+BEGIN
+
+      -- Truncate and load data for crm_cust_info
+      TRUNCATE TABLE silver.crm_cust_info;
+      
+      COPY silver.crm_cust_info
+      FROM '/XX/XX/XX/sql-data-warehouse-project/datasets/processed_crm/cust_info.csv' -- Path where file is located
+      DELIMITER ','   -- Use comma as field separator
+      CSV HEADER;     -- Skip the first row of column names
+      
+      -- Truncate and load data for crm_prd_info
+      TRUNCATE TABLE silver.crm_prd_info;
+      
+      COPY silver.crm_prd_info
+      FROM '/XX/XX/XX/sql-data-warehouse-project/datasets/processed_crm/prd_info.csv'
+      DELIMITER ',' 
+      CSV HEADER;
+      
+      -- Truncate and load data for crm_sales_details
+      TRUNCATE TABLE silver.crm_sales_details;
+      
+      COPY silver.crm_sales_details
+      FROM '/XX/XX/XX/sql-data-warehouse-project/datasets/processed_crm/sales_details.csv'
+      DELIMITER ',' 
+      CSV HEADER;
+      
+      -- Truncate and load data for erp_loc_a101
+      TRUNCATE TABLE silver.erp_loc_a101;
+      
+      COPY silver.erp_loc_a101
+      FROM '/XX/XX/XX/sql-data-warehouse-project/datasets/processed_erp/loc_a101.csv'
+      DELIMITER ',' 
+      CSV HEADER;
+      
+      -- Truncate and load data for erp_cust_az12
+      TRUNCATE TABLE silver.erp_cust_az12;
+      
+      COPY silver.erp_cust_az12
+      FROM '/XX/XX/XX/sql-data-warehouse-project/datasets/processed_erp/cust_az12.csv'
+      DELIMITER ',' 
+      CSV HEADER;
+      
+      -- Truncate and load data for erp_px_cat_g1v2
+      TRUNCATE TABLE silver.erp_px_cat_g1v2;
+      
+      COPY silver.erp_px_cat_g1v2
+      FROM '/XX/XX/XX/sql-data-warehouse-project/datasets/processed_erp/px_cat_g1v2.csv'
+      DELIMITER ',' 
+      CSV HEADER;
+
+END;
+$$ LANGUAGE plpgsql;
