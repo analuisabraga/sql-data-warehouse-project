@@ -16,7 +16,9 @@ Key Specifications:
 📊 Analytics & Reporting (Data Analysis)
 
 Goal:
+
 Develop SQL-based analytical solutions to generate actionable insights into:
+
     - Customer Behavior
     - Product Performance
     - Sales Trends
