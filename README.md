@@ -7,6 +7,7 @@ Goal:
 Design and implement a robust data warehouse using SQL Server to centralize sales data, enhancing analytical capabilities and enabling data-driven decision-making.
 
 Key Specifications:
+
     - Data Sources: Ingest data from two source systems (ERP and CRM) provided as CSV files.
     - Data Quality: Clean and standardize the data to address quality issues before analysis.
     - Integration: Merge both sources into a unified, query-optimized data model designed for analytical purposes.
@@ -15,9 +16,7 @@ Key Specifications:
 
 📊 Analytics & Reporting (Data Analysis)
 
-Goal:
-
-Develop SQL-based analytical solutions to generate actionable insights into:
+The goal is to develop SQL-based analytical solutions to generate actionable insights into:
 
     - Customer Behavior
     - Product Performance
